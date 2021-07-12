@@ -9,9 +9,10 @@ int main()
      float temp;
      float RS,RP;
      char ch;
-    printf("\n\n Press s to Calculate Resistance in Series.");
-    printf("\n\n Press p to Calculate Resistance in Parallel.");
-    printf("\n\n Enter your choice (s, p): ");
+    printf("\n\n EQUIVALENT RESISTANCE CACULATOR");
+    printf("\n\n Press S to Calculate Resistance in Series.");
+    printf("\n\n Press P to Calculate Resistance in Parallel.");
+    printf("\n\n Enter your choice (S, P): ");
     scanf("%c",&ch);
    
     if((ch =='s') ||(ch =='S'))
