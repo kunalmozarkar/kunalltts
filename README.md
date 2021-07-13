@@ -1,0 +1,2 @@
+# kunalltts
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3b70846774f44a5aa12a470562620aa6)](https://app.codacy.com/gh/kunalmozarkar/kunalltts?utm_source=github.com&utm_medium=referral&utm_content=kunalmozarkar/kunalltts&utm_campaign=Badge_Grade_Settings)
