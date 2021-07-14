@@ -14,16 +14,14 @@ Calculation in :
                
                2.Resistors in Parallel
 
-BUILD   | CODE QUALITY  | CPPCHECK |Git- Inspector	|UNITY
------|--------------|--------|-----------------|------------
-[![cppcheck-action-test](https://github.com/kunalmozarkar/kunalltts/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/kunalmozarkar/kunalltts/actions/workflows/cppcheck.yml)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/05c90029ffc8466c9f4ff9305af84733)](https://www.codacy.com/gh/kunalmozarkar/kunalltts/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kunalmozarkar/kunalltts&amp;utm_campaign=Badge_Grade)![image](https://user-images.githubusercontent.com/86200682/125490698-420ac882-9260-46c3-825b-21a9a3497c97.png)![image](https://user-images.githubusercontent.com/86200682/125490962-6c8fba66-7ccb-46dd-9e6c-68755cfcc26a.png)|[![cppcheck-action-test](https://github.com/kunalmozarkar/kunalltts/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/kunalmozarkar/kunalltts/actions/workflows/cppcheck.yml)|Contribution Check - Git Inspector	
-
-
-
+BUILD   | CODE QUALITY  | CPPCHECK |Git- Inspector
+-----|--------------|--------|-----------------
+[![CI](https://github.com/kunalmozarkar/kunalltts/actions/workflows/C%5CC++.yml/badge.svg)](https://github.com/kunalmozarkar/kunalltts/actions/workflows/C%5CC++.yml)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/05c90029ffc8466c9f4ff9305af84733)](https://www.codacy.com/gh/kunalmozarkar/kunalltts/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kunalmozarkar/kunalltts&amp;utm_campaign=Badge_Grade)![image](https://user-images.githubusercontent.com/86200682/125490698-420ac882-9260-46c3-825b-21a9a3497c97.png)![image](https://user-images.githubusercontent.com/86200682/125490962-6c8fba66-7ccb-46dd-9e6c-68755cfcc26a.png)|[![cppcheck-action-test](https://github.com/kunalmozarkar/kunalltts/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/kunalmozarkar/kunalltts/actions/workflows/cppcheck.yml)|[![Contribution Check - Git Inspector](https://github.com/kunalmozarkar/kunalltts/actions/workflows/git_inspector.yml/badge.svg)](https://github.com/kunalmozarkar/kunalltts/actions/workflows/git_inspector.yml)
+	
 # FOLDER STRUCTURE
 
 FOLDER	|DESCRIPTION
------|--------------
+--------|--------------
 1_REQUIREMENTS	|Documents detailing requirements and research
 2_ARCHITECTURE	|Flow Chart for High Level and Low level
 3_IMPLEMENTATION	|All code and documentation
@@ -35,7 +33,7 @@ FOLDER	|DESCRIPTION
 
 SF ID	|Name	|Features|Number of Test Cases
 -----|------|--------|-----------
-265346	|KUNAL MOZARKAR	| 2 | 2
+265346	|KUNAL MOZARKAR	| 3 | 2
 
 # FEATURES TABLE
 
@@ -55,3 +53,18 @@ SR. NO.	|CHALLENGES|	OVERCOME
 3	|Creating github Workflows|	By Code Inspection
 4 |Pushing files and folders to repository by Git bash	|By removing all the previous pushed files and folders
 5	|C/C++ CI - Build Status is not passing	|By modifying the code
+
+# PROGRAMMING LANGUAGE AND BUILD WITH
+## Following were used in Project
+1.C Language
+
+2.Visual Studio Code
+
+3.Github
+
+## Tools
+Following were used to design UML Diagrams
+
+1.Diagrams
+
+2.Creately
