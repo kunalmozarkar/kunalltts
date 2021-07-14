@@ -1,55 +1,61 @@
-TEST_PROJ_NAME = R Calculator
-BUILD_DIR = Build
-CFLAGS = -Wall -g
+	# Name of the project
+PROJECT_NAME = Eq Resistance Calculator
 
-SRC = Project.c\
-      src/*.c
+# Output directory
+BUILD = build
 
-INC = inc
-
-
-$(BUILD_DIR):
-	mkdir $(BUILD_DIR)
-
-INC_TEST = -Iinc -Iunity
+# All source code files
+SRC = Project.\
+src/testproject.c\
 
 
-OUTPUT = $(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)
-
-TEST_SRC = src/*.c\
+# All test source files
+TEST_SRC = src/Project.c\
+src/Project.c\
 test/testproject.c\
 unity/unity.c\
 
-TEST_OUTPUT = $(BUILD_DIR)/Test_$(TEST_PROJ_NAME).$(EXEC)
+TEST_OUTPUT = $(BUILD)/Test_$(project).exe
 
-ifdef OS
-   RM = del /q
-   FixPath = $(subst /,\,$1)
-   EXEC = exe
-else
-   ifeq ($(shell uname), Linux)
-      RM = rm -rf
-      FixPath = $1
-	  EXEC = out
-   endif
-endif
+# All include folders with header files
+INC	= -Iinc\
+-Iunity\
 
-all : $(SRC) $(BUILD_DIR)
-	gcc -I $(INC) $(SRC) -o $(call FixPath,$(OUTPUT)) 
+#Library Inlcudes
+#if working with CUnit 
+#INCLUDE_LIBS = -lcunit
+INCLUDE_LIBS =
 
-run : all
-	$(call FixPath,$(OUTPUT))
+# Project Output name
+PROJECT_OUTPUT = $(BUILD)/$(project).exe
 
-clean :
-	$(RM) $(call FixPath,$(BUILD_DIR)/*)
+# Document files
+DOCUMENTATION_OUTPUT = documentation/html
 
-valgrind :
-	valgrind $(call FixPath,$(TEST_OUTPUT))
+# Default target built
+$(PROJECT_NAME):all
 
-coverageCheck:$(BUILD_DIR)
-	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(SRC) $(INC_TEST) -o $(OUTPUT)
-	./$(OUTPUT)
- 
-test:$(BUILD_DIR)
-	gcc $(TEST_SRC) $(INC_TEST) -o $(TEST_OUTPUT)
+# Run the target even if the matching name exists
+.PHONY: run clean test doc all
+
+all: $(SRC) $(BUILD)
+	gcc $(SRC) $(INC) -o $(project).exe
+
+# Call `mingw32-make` to run the application
+run:$(PROJECT_NAME)
+	./$(PROJECT_OUTPUT).out
+
+
+
+
+# Build and run the unit tests
+test:$(BUILD)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
 	./$(TEST_OUTPUT)
+
+	./$(TEST_OUTPUT)
+
+
+# Create new build folder if not present
+$(BUILD):
+	mkdir build
