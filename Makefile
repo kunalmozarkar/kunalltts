@@ -1,5 +1,5 @@
-	# Name of the project
-PROJECT_NAME = Calculator
+# Name of the project
+PROJECT_NAME = Eq Resistance Calculator
 
 # Output directory
 BUILD = build
@@ -15,7 +15,7 @@ src/Project.c\
 test/testproject.c\
 unity/unity.c\
 
-TEST_OUTPUT = $(BUILD)/Test_$(game).exe
+TEST_OUTPUT = $(BUILD)/Test_$(Project).exe
 
 # All include folders with header files
 INC	= -Iinc\
@@ -27,7 +27,7 @@ INC	= -Iinc\
 INCLUDE_LIBS =
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(gane).exe
+PROJECT_OUTPUT = $(BUILD)/$(Project).exe
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
@@ -39,12 +39,11 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(game).exe
+	gcc $(SRC) $(INC) -o $(Project).exe
 
 # Call `mingw32-make` to run the application
 run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT).out
-
 
 
 
