@@ -1,3 +1,15 @@
+3_IMPLEMENTATION/Project.c:5:25: style: The scope of the variable 'Rs' can be reduced. [variableScope]
+     int r[10], num, i, Rs = 0;
+                        ^
+3_IMPLEMENTATION/Project.c:8:10: style: Variable 'r2' is not assigned a value. [unassignedVariable]
+     int r2;
+         ^
+3_IMPLEMENTATION/Project.c:10:12: style: Unused variable: RS [unusedVariable]
+     float RS,RP;
+           ^
+3_IMPLEMENTATION/Project.c:10:15: style: Unused variable: RP [unusedVariable]
+     float RS,RP;
+              ^
 3_IMPLEMENTATION/src/Project.c:5:25: style: The scope of the variable 'Rs' can be reduced. [variableScope]
      int r[10], num, i, Rs = 0;
                         ^
