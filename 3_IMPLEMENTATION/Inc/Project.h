@@ -2,13 +2,14 @@
 * @file project.h
 *
 */
-#ifndef __PROJECT_H_
-#define __PROJECT_H_
 
-#include <stdio.h>
-
-int product_zero(char pdt[]);
-displayValue();
-void menu_display();
-
-#endif
+ #ifndef __PROJECT_H
+ #define __PROJECT_H
+  
+ #include <stdio.h>
+  
+ int  temp=(1/er)+((1/(float)r2));
+ displayValue();
+ void menu_display();
+  
+ #endif
